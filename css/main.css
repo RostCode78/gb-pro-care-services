@@ -39,6 +39,9 @@ header {
     top: 0;
     display: flex;
     align-items: center; }
+  @media (max-width: 500px) {
+    header nav {
+      background-color: transparent; } }
 
 .logo-nav {
   width: auto;
@@ -46,6 +49,9 @@ header {
   position: absolute;
   left: 35px;
   flex-direction: row; }
+  @media (max-width: 500px) {
+    .logo-nav {
+      display: none; } }
 
 .img-logo-nav {
   width: 60px;
@@ -63,6 +69,9 @@ header {
   line-height: 20px;
   color: #303030;
   cursor: default; }
+  @media (max-width: 320px) {
+    .txt-logo-nav {
+      font-size: 1em; } }
 
 .btn-nav {
   width: 50px;
@@ -71,12 +80,7 @@ header {
   position: absolute;
   right: 35px;
   cursor: pointer;
-  transition: all .1s ease-in-out;
-  overflow: hidden; }
-  .btn-nav:hover {
-    box-shadow: 0 2px 5px #00000033; }
-  .btn-nav:active {
-    box-shadow: 0 2px 5px #0000004f; }
+  transition: all .1s ease-in-out; }
   @media (max-width: 320px) {
     .btn-nav {
       width: 40px;

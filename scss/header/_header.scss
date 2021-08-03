@@ -12,6 +12,11 @@ header {
         display: flex;
         align-items: center;
     }
+    @media (max-width: 500px) {
+        & nav {
+            background-color: transparent;
+        }
+    }
 }
 
 @import './nav';

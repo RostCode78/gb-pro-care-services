@@ -5,6 +5,11 @@
     left: 35px;
     @extend %flex-align;
     flex-direction: row;
+    @media (max-width: 500px) {
+        & {
+            display: none;
+        }
+    }
 }
 
 .img-logo-nav {
@@ -29,6 +34,11 @@
     line-height: 20px;
     color: $black;
     cursor: default;
+    @media (max-width: 320px) {
+        & {
+            font-size: em(16px);
+        }
+    }
 }
 
 .btn-nav {
@@ -40,13 +50,6 @@
     right: 35px;
     cursor: pointer;
     transition: all .1s ease-in-out;
-    overflow: hidden;
-    &:hover {
-        box-shadow: 0 2px 5px #00000033;
-    }
-    &:active {
-        box-shadow: 0 2px 5px #0000004f;
-    }
     @media (max-width: 320px) {
         & {
             width: 40px;
