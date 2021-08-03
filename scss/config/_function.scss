@@ -1,0 +1,10 @@
+@function em($px, $base: 16px) {
+    @if type-of($px)==number and unit($px)=='px' {
+        @return $px / $base * 1em
+    }
+    @return null
+}
+
+@function img($img) {
+    @return url($path + $img)
+}

@@ -1,0 +1,15 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif;
+}
+
+@import './config/config';
+@import './config/extend';
+@import './config/function';
+@import './header/header';
+.prueba {
+    width: 100%;
+    height: 200vh;
+    background-color: #e97171;
+}
