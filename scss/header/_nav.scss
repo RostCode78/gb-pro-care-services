@@ -50,6 +50,8 @@
     right: 35px;
     cursor: pointer;
     transition: all .1s ease-in-out;
+    overflow: hidden;
+    z-index: 10;
     @media (max-width: 320px) {
         & {
             width: 40px;
@@ -93,5 +95,24 @@
     }
     .btn-nav.open &:after {
         transform: rotate(-45deg) translate(36px, 36px);
+    }
+}
+
+.sidebar {
+    width: 500px;
+    height: 100vh;
+    background-color: $white;
+    position: absolute;
+    right: -100%;
+    top: 0;
+    z-index: 5;
+    transition: all .3s ease-in-out;
+    &.open {
+        right: 0;
+    }
+    @media (max-width: 500px) {
+        & {
+            width: 100%;
+        }
     }
 }
