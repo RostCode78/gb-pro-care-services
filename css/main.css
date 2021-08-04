@@ -3,9 +3,10 @@
   margin: 0;
   font-family: sans-serif;
   text-decoration: none;
-  list-style: none; }
+  list-style: none;
+  color: #303030; }
 
-.img-logo-nav, .txt-logo-nav, .btn-nav, .sidebar, .img-logo-side, .txt-logo-side, .redes-side a {
+.img-logo-nav, .txt-logo-nav, .btn-nav, .sidebar, .img-logo-side, .txt-logo-side, .redes-side a, .text-header, .text-header h1 {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -279,11 +280,6 @@ header {
       right: auto; } }
   @media (max-width: 1024px) {
     #slider-container {
-      width: 95%;
-      height: 450px;
-      top: 140px; } }
-  @media (max-width: 500px) {
-    #slider-container {
       width: 100%;
       height: 80vh;
       top: 0; } }
@@ -325,6 +321,39 @@ header {
 
 .wrap {
   margin-left: -4.5px; }
+
+.text-header {
+  width: 600px;
+  height: 250px;
+  background-color: #f9f5f4;
+  position: absolute;
+  left: 50px;
+  top: 145px; }
+  .text-header h1 {
+    width: 90%;
+    height: auto;
+    font-size: 4em;
+    font-family: roboto, sans-serif;
+    font-weight: 800; }
+  @media (max-width: 1024px) {
+    .text-header {
+      width: 450px;
+      height: 200px;
+      top: inherit;
+      bottom: 50px;
+      left: 20px; }
+    .text-header h1 {
+      font-size: 2.875em; } }
+  @media (max-width: 425px) {
+    .text-header {
+      width: 80%;
+      height: 200px;
+      top: inherit;
+      bottom: 100px;
+      left: auto; }
+    .text-header h1 {
+      font-size: 2em;
+      text-align: center; } }
 
 .prueba {
   width: 100%;
