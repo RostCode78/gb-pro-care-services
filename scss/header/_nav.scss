@@ -97,22 +97,3 @@
         transform: rotate(-45deg) translate(36px, 36px);
     }
 }
-
-.sidebar {
-    width: 500px;
-    height: 100vh;
-    background-color: $white;
-    position: absolute;
-    right: -100%;
-    top: 0;
-    z-index: 5;
-    transition: all .3s ease-in-out;
-    &.open {
-        right: 0;
-    }
-    @media (max-width: 500px) {
-        & {
-            width: 100%;
-        }
-    }
-}

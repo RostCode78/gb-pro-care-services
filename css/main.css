@@ -1,18 +1,20 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: sans-serif; }
+  font-family: sans-serif;
+  text-decoration: none;
+  list-style: none; }
 
-.img-logo-nav, .txt-logo-nav, .btn-nav {
+.img-logo-nav, .txt-logo-nav, .btn-nav, .sidebar, .img-logo-side, .txt-logo-side {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.logo-nav {
+.logo-nav, .logo-side {
   display: flex;
   align-items: center; }
 
-.img-logo-nav img {
+.img-logo-nav img, .img-logo-side img {
   display: block;
   min-width: 100%;
   min-height: 100%;
@@ -132,6 +134,94 @@ header {
   @media (max-width: 500px) {
     .sidebar {
       width: 100%; } }
+
+.logo-side {
+  width: auto;
+  height: 60px;
+  position: absolute;
+  top: 15px;
+  left: 35px;
+  display: none;
+  flex-direction: row; }
+  @media (max-width: 535px) {
+    .logo-side {
+      display: flex; } }
+  @media (max-width: 375px) {
+    .logo-side {
+      left: 20px; } }
+
+.img-logo-side {
+  width: 50px;
+  height: 50px;
+  margin-right: 15px; }
+
+.txt-logo-side {
+  width: 180px;
+  height: 60px;
+  font-family: 'Roboto', sans-serif;
+  text-align: left;
+  font-size: 1.375em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  line-height: 20px;
+  color: #303030;
+  cursor: default; }
+  @media (max-width: 320px) {
+    .txt-logo-side {
+      font-size: 1em; } }
+
+.menu-side {
+  width: 85%;
+  height: 450px;
+  margin-top: -135px; }
+  .menu-side ul {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+    flex-direction: column; }
+  .menu-side li {
+    width: 200px;
+    height: auto; }
+  .menu-side a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.75em;
+    font-weight: 400;
+    color: #303030;
+    transition: all .2s ease-in-out;
+    position: relative;
+    overflow: hidden; }
+    .menu-side a:hover {
+      color: #0053A1; }
+    .menu-side a::before {
+      content: '';
+      width: 100%;
+      height: 3px;
+      background-color: #f9b122;
+      position: absolute;
+      bottom: 0;
+      right: -100%;
+      transition: all .2s ease-in-out; }
+    .menu-side a:hover::before {
+      right: 0; }
+  @media (max-width: 535px) {
+    .menu-side ul {
+      align-items: center;
+      justify-content: space-around; }
+    .menu-side a {
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      .menu-side a::before {
+        content: '';
+        width: 0%;
+        right: 50%; }
+      .menu-side a:hover::before {
+        width: 100%; } }
 
 .prueba {
   width: 100%;
