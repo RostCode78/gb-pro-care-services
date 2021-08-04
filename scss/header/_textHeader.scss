@@ -26,13 +26,23 @@
             font-size: em(46px);
         }
     }
-    @media (max-width: 425px) {
+    @media (max-width: 535px) {
         & {
             width: 80%;
             height: 200px;
             top: inherit;
             bottom: 100px;
             left: auto;
+        }
+        & h1 {
+            font-size: em(32px);
+            text-align: center;
+        }
+    }
+    @media (max-width: 320px) {
+        & {
+            width: 90%;
+            height: 160px;
         }
         & h1 {
             font-size: em(32px);
