@@ -3,11 +3,12 @@
     height: 60px;
     position: absolute;
     left: 35px;
+    z-index: 10;
     @extend %flex-align;
     flex-direction: row;
     @media (max-width: 500px) {
         & {
-            display: none;
+            left: 25px;
         }
     }
 }
@@ -19,6 +20,12 @@
     margin-right: 15px;
     img {
         @extend %img-cover;
+    }
+    @media (max-width: 500px) {
+        & {
+            width: 45px;
+            height: 45px;
+        }
     }
 }
 
@@ -34,6 +41,15 @@
     line-height: 20px;
     color: $black;
     cursor: default;
+    transition: all .4s ease-in-out;
+    &.open {
+        color: $black;
+    }
+    @media (max-width: 500px) {
+        & {
+            color: transparent;
+        }
+    }
     @media (max-width: 320px) {
         & {
             font-size: em(16px);

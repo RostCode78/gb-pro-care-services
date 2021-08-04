@@ -12,9 +12,6 @@
     &.open {
         right: 0;
     }
-    &.open .logo-side {
-        opacity: 1;
-    }
     @media (max-width: 500px) {
         & {
             width: 100%;
@@ -22,62 +19,10 @@
     }
 }
 
-.logo-side {
-    width: auto;
-    height: 60px;
-    position: absolute;
-    top: 15px;
-    left: 35px;
-    display: none;
-    @extend %flex-align;
-    flex-direction: row;
-    opacity: 0;
-    transition: all .7s ease-in-out;
-    @media (max-width: 535px) {
-        & {
-            display: flex;
-        }
-    }
-    @media (max-width: 375px) {
-        & {
-            left: 20px;
-        }
-    }
-}
-
-.img-logo-side {
-    width: 50px;
-    height: 50px;
-    @extend %flex-center;
-    margin-right: 15px;
-    img {
-        @extend %img-cover;
-    }
-}
-
-.txt-logo-side {
-    width: 180px;
-    height: 60px;
-    @extend %flex-center;
-    font-family: 'Roboto', sans-serif;
-    text-align: left;
-    font-size: em(22px);
-    font-weight: 700;
-    letter-spacing: 1px;
-    line-height: 20px;
-    color: $black;
-    cursor: default;
-    @media (max-width: 320px) {
-        & {
-            font-size: em(16px);
-        }
-    }
-}
-
 .menu-side {
     width: 85%;
-    height: 450px;
-    margin-top: -135px;
+    height: 50%;
+    margin-top: -125px;
     & ul {
         width: 100%;
         height: 100%;
