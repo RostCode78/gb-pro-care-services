@@ -1,0 +1,22 @@
+.about-text {
+    width: 780px;
+    height: 325px;
+    background-color: $white;
+    box-shadow: 4px 4px 8px #0000001c;
+    position: absolute;
+    right: 80px;
+    top: 120px;
+    @extend %flex-center;
+    flex-direction: column;
+    & h2 {
+        font-size: em(64px);
+        width: 90%;
+        height: auto;
+        margin-bottom: 20px;
+    }
+    & p {
+        font-size: em(22px);
+        width: 90%;
+        height: auto;
+    }
+}
