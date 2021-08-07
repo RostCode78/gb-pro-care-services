@@ -2,21 +2,69 @@
     width: 780px;
     height: 325px;
     background-color: $white;
-    box-shadow: 4px 4px 8px #0000001c;
     position: absolute;
     right: 80px;
     top: 120px;
     @extend %flex-center;
     flex-direction: column;
     & h2 {
+        font-family: roboto, sans-serif;
+        font-weight: 800;
         font-size: em(64px);
         width: 90%;
         height: auto;
         margin-bottom: 20px;
     }
     & p {
+        font-family: roboto, sans-serif;
+        font-weight: 400;
         font-size: em(22px);
         width: 90%;
         height: auto;
+    }
+    @media (max-width: 1120px) {
+        & {
+            width: 580px;
+            height: 275px;
+        }
+        & h2 {
+            font-size: em(52px);
+        }
+        & p {
+            font-size: em(17px);
+        }
+    }
+    @media (max-width: 800px) {
+        & {
+            width: 90%;
+            height: 275px;
+            right: auto;
+            top: auto;
+            bottom: 60px;
+        }
+        & h2 {
+            font-size: em(46px);
+            text-align: center;
+        }
+        & p {
+            text-align: center;
+        }
+    }
+    @media (max-width: 500px) {
+        & {
+            height: 325px;
+            bottom: 25px;
+        }
+    }
+    @media (max-width: 400px) {
+        & {
+            height: 280px;
+        }
+        & h2 {
+            font-size: em(32px);
+        }
+        & p {
+            font-size: em(14px);
+        }
     }
 }
