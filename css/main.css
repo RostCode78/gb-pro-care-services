@@ -6,12 +6,12 @@
   list-style: none;
   color: #303030; }
 
-.img-logo-nav, .txt-logo-nav, .btn-nav, .sidebar, .redes-side a, .text-header, .text-header h1, .btn-contact, #about-us, .about-text {
+.img-logo-nav, .txt-logo-nav, .btn-nav, .sidebar, .redes-side a, .text-header, .text-header h1, .btn-contact, #about-us, .about-text, #services, .text-services-content, .box-service, .modal-services-container, .close-modal-services {
   display: flex;
   justify-content: center;
   align-items: center; }
 
-.logo-nav {
+.logo-nav, .list-services-content {
   display: flex;
   align-items: center; }
 
@@ -549,5 +549,164 @@ header {
       font-size: 2em; }
     .about-text p {
       font-size: 0.875em; } }
+
+#services {
+  width: 100%;
+  height: auto;
+  background-color: #f9f5f4;
+  flex-direction: column;
+  position: relative;
+  padding: 20px 0; }
+
+.text-services-content {
+  width: 570px;
+  height: 150px;
+  flex-direction: column;
+  padding: 15px 0; }
+  .text-services-content h2 {
+    font-size: 3.25em;
+    font-family: roboto, sans-serif;
+    font-weight: 800;
+    margin-bottom: 15px;
+    text-align: center; }
+  .text-services-content p {
+    font-size: 1.625em;
+    font-family: roboto, sans-serif;
+    font-weight: 400;
+    text-align: center; }
+  @media (max-width: 535px) {
+    .text-services-content {
+      width: 90%; }
+    .text-services-content h2 {
+      font-size: 2.625em; }
+    .text-services-content p {
+      font-size: 1em; } }
+  @media (max-width: 320px) {
+    .text-services-content h2 {
+      font-size: 2em; } }
+
+.list-services-content {
+  width: 950px;
+  height: auto;
+  justify-content: space-around;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin-top: 40px; }
+  @media (max-width: 800px) {
+    .list-services-content {
+      width: 90%; } }
+  @media (max-width: 320px) {
+    .list-services-content {
+      width: 100%; } }
+
+.service {
+  width: 200px;
+  height: 200px;
+  background-color: #f9f5f4;
+  margin-bottom: 35px;
+  cursor: pointer;
+  position: relative; }
+  @media (max-width: 425px) {
+    .service {
+      width: 150px;
+      height: 150px; } }
+  .service:hover .box-service {
+    transform: scale(1.05); }
+
+.background-service {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  display: inline-flex;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  z-index: 1; }
+  .background-service img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: cover;
+    object-position: center;
+    pointer-events: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none; }
+
+.box-service {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff67;
+  flex-direction: column;
+  position: absolute;
+  z-index: 2;
+  transition: all .3s ease-in-out; }
+  .box-service p {
+    font-size: 1.125em;
+    font-family: roboto, sans-serif;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #303030;
+    margin-top: 10px; }
+
+.img-box-service {
+  width: 45%;
+  height: 45%;
+  display: inline-flex;
+  overflow: hidden;
+  pointer-events: none;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none; }
+  .img-box-service img {
+    display: block;
+    min-width: 100%;
+    min-height: 100%;
+    object-fit: contain;
+    object-position: center;
+    pointer-events: none;
+    -webkit-user-drag: none;
+    -khtml-user-drag: none;
+    -moz-user-drag: none;
+    -o-user-drag: none;
+    user-drag: none; }
+
+.modal-services-container {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffffa4;
+  border-radius: 25px;
+  position: fixed;
+  z-index: 1000;
+  display: none; }
+
+.close-modal-services {
+  width: 45px;
+  height: 45px;
+  background-color: #0053A1;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  cursor: pointer;
+  font-size: 1.875em;
+  font-family: roboto, sans-serif;
+  font-weight: 800;
+  color: #f9f5f4; }
+
+.modal-services-content {
+  width: 80%;
+  height: 90%;
+  background-color: #f9f5f4;
+  border: 1px solid red; }
 
 /*# sourceMappingURL=main.css.map */

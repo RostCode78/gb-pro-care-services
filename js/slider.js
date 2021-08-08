@@ -1,7 +1,3 @@
-const $ = document.querySelector.bind(document);
-const $$ = document.querySelectorAll.bind(document);
-const log = console.log;
-
 const slider = $('#slider-header');
 const items = $$('.item');
 let elementStyle = window.getComputedStyle(slider).getPropertyValue('width');

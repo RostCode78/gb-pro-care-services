@@ -1,6 +1,10 @@
-const menuBtn = document.querySelector('.btn-nav');
-const sidebar = document.querySelector('.sidebar');
-const text = document.querySelector('.txt-logo-nav');
+const $ = document.querySelector.bind(document);
+const $$ = document.querySelectorAll.bind(document);
+const log = console.log;
+
+const menuBtn = $('.btn-nav');
+const sidebar = $('.sidebar');
+const text = $('.txt-logo-nav');
 let menuOpen = false;
 
 menuBtn.addEventListener(
