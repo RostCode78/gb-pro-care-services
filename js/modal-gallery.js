@@ -19,7 +19,6 @@ const mMG = {
 
     showPicture: ( e ) => {
         pMG.urlImg = e.target;
-        console.log(pMG.urlImg.outerHTML);
         mMG.modalGallery(pMG.urlImg);
     },
 
