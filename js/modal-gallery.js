@@ -1,0 +1,48 @@
+const pMG = {
+    pictures: $$('.box-img>img'),
+    modalGallery: $('#modal-gallery'),
+    modal: $('.img-modal-gallery'),
+    urlImg: null
+}
+
+const mMG = {
+
+    getPicture: () => {
+        pMG.pictures.forEach( e => {
+            e.addEventListener(
+                'click',
+                mMG.showPicture
+            )
+        })
+    },
+
+    showPicture: ( e ) => {
+        pMG.urlImg = e.target;
+        console.log(pMG.urlImg.outerHTML);
+        mMG.modalGallery(pMG.urlImg);
+    },
+
+    modalGallery: ( url ) => {
+        pMG.modalGallery.style.display = "flex";
+        pMG.modal.innerHTML = url.outerHTML;
+
+        pMG.modal.childNodes[0].style.width = "100%";
+        pMG.modal.childNodes[0].style.height = "100%";
+        pMG.modal.childNodes[0].style.backgroundSize = "auto";
+    },
+
+    quitarFoto: () => {
+        pMG.modalGallery.addEventListener(
+            'click',
+            mMG.borrar
+        )
+    },
+
+    borrar: () => {
+        pMG.modalGallery.style.display = "none";
+    }
+
+}
+
+mMG.getPicture();
+mMG.quitarFoto();
