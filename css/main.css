@@ -6,7 +6,7 @@
   list-style: none;
   color: #303030; }
 
-.img-logo-nav, .txt-logo-nav, .btn-nav, .sidebar, .redes-side a, .text-header, .text-header h1, .btn-contact, #about-us, .about-text, #services, .text-services-content, .box-service, .modal-services-container, .close-modal-services, #gallery-container, .text-gallery-content, .gallery-content {
+.img-logo-nav, .txt-logo-nav, .btn-nav, .sidebar, .redes-side a, .text-header, .text-header h1, .btn-contact, #about-us, .about-text, #services, .text-services-content, .box-service, .modal-services-container, .close-modal-services, #gallery-container, .text-gallery-content, .gallery-content, .close-modal-gallery {
   display: flex;
   justify-content: center;
   align-items: center; }
@@ -841,7 +841,8 @@ header {
     letter-spacing: 2px;
     font-size: 2.875em;
     font-weight: 800;
-    color: #303030; }
+    color: #303030;
+    text-align: center; }
 
 .gallery-content {
   width: 90%;
@@ -891,7 +892,7 @@ header {
   width: 100%;
   height: 100%;
   position: fixed;
-  background-color: #303030c7;
+  background-color: #ffffffc7;
   top: 0;
   left: 0;
   display: none;
@@ -928,5 +929,25 @@ header {
     -moz-user-drag: none;
     -o-user-drag: none;
     user-drag: none; }
+
+.close-modal-gallery {
+  width: 45px;
+  height: 45px;
+  background-color: #f9f5f4;
+  position: absolute;
+  top: 50px;
+  right: 50px;
+  cursor: pointer;
+  transition: all .1 ease-in-out;
+  box-shadow: 2px 2px 8px #00000031;
+  font-size: 1.875em;
+  font-family: roboto, sans-serif;
+  font-weight: 800;
+  color: #0053A1;
+  z-index: 10000; }
+  .close-modal-gallery:hover {
+    box-shadow: 2px 2px 8px #00000021; }
+  .close-modal-gallery:active {
+    box-shadow: 2px 2px 8px #00000011; }
 
 /*# sourceMappingURL=main.css.map */

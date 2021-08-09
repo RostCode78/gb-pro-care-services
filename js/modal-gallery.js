@@ -2,7 +2,8 @@ const pMG = {
     pictures: $$('.box-img>img'),
     modalGallery: $('#modal-gallery'),
     modal: $('.img-modal-gallery'),
-    urlImg: null
+    urlImg: null,
+    closeBtn: $('.close-modal-gallery')
 }
 
 const mMG = {
@@ -32,7 +33,7 @@ const mMG = {
     },
 
     quitarFoto: () => {
-        pMG.modalGallery.addEventListener(
+        pMG.closeBtn.addEventListener(
             'click',
             mMG.borrar
         )
