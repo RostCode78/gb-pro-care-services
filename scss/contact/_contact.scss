@@ -1,0 +1,96 @@
+#contact-container {
+    width: 100%;
+    height: 100vh;
+    background-color: $white;
+    @extend %flex-center;
+    position: relative;
+    &::after {
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: $white;
+        background: -webkit-linear-gradient(to top, $primary, $white);
+        background: linear-gradient(to top, $primary, $white);
+        position: absolute;
+        top: 0;
+        z-index: 1;
+    }
+    @media (max-width: 535px) {
+        & {
+            height: 950px;
+        }
+    }
+}
+
+.titulo-contact-content {
+    width: 600px;
+    height: auto;
+    padding: 15px;
+    position: absolute;
+    z-index: 2;
+    left: 100px;
+    top: 100px;
+    & h2 {
+        font-size: em(64px);
+        font-family: roboto, sans-serif;
+        font-weight: 600;
+        padding-bottom: 15px;
+        position: relative;
+        margin-bottom: 20px;
+        &::before {
+            content: '';
+            width: 15%;
+            height: 4px;
+            position: absolute;
+            bottom: 10px;
+            background-color: $secundary;
+        }
+    }
+    & p {
+        font-size: em(52px);
+        font-family: roboto, sans-serif;
+        font-weight: 300;
+    }
+    @media (max-width: 1120px) {
+        & {
+            left: 25px;
+            top: 100px;
+        }
+    }
+    @media (max-width: 1024px) {
+        & {
+            width: 500px;
+        }
+        & p {
+            font-size: em(42px);
+        }
+    }
+    @media (max-width: 800px) {
+        & {
+            width: 350px;
+        }
+        & h2 {
+            font-size: em(46px);
+        }
+        & p {
+            font-size: em(32px);
+        }
+    }
+    @media (max-width: 535px) {
+        & {
+            width: 90%;
+            left: auto;
+            top: 20px;
+        }
+        & h2 {
+            font-size: em(46px);
+            text-align: center;
+        }
+        & p {
+            font-size: em(32px);
+            text-align: center;
+        }
+    }
+}
+
+@import './form-contact';

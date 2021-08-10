@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>GD Pro Care Services</title>
-    <link rel="icon" href="./img/Group4.svg">
+    <link rel="icon" href="./img/logo.svg">
     <link rel="stylesheet" href="./css/main.css">
 
     <!-- GOOGLE FONTS -->
@@ -247,11 +247,50 @@
         </div>
     </div>
 
+    <div id="contact-container">
+        <div class="titulo-contact-content">
+            <h2>Contact Us</h2>
+            <p>Do you have a problem with your garden? <br> We can help you.</p>
+        </div>
+        <div class="box-contact-content">
+            <form action="send.php" method="post" id="form">
+                <div class="title-form">
+                    <p>Send us a message.</p>
+                </div>
+
+                <div class="data-form">
+                    <label name="name" for="name" class="lbl-form">Name:</label>
+                    <input type="text" id="name" class="input-form" autocomplete="off">
+                    <div class="line-form"></div>
+                </div>
+
+                <div class="data-form">
+                    <label name="email" for="email" class="lbl-form">Email:</label>
+                    <input type="email" id="email" class="input-form" autocomplete="off">
+                    <div class="line-form"></div>
+                </div>
+
+                <div class="data-form">
+                    <label name="text" for="text" class="lbl-form">Number:</label>
+                    <input type="text" id="text" class="input-form" autocomplete="off">
+                    <div class="line-form"></div>
+                </div>
+
+                <div class="enviar-form">
+                    <div class="btn-form">
+                        <input type="submit" value="Send Message">
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+
     <script src="./js/nav.js"></script>
     <script src="./js/slider.js"></script>
     <script src="./js/slider-about.js"></script>
     <script src="./js/modal-services.js"></script>
     <script src="./js/modal-gallery.js"></script>
+    <script src="./js/form.js"></script>
 
 </body>
 
